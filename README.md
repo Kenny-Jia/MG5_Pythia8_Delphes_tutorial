@@ -45,6 +45,7 @@ cp $mg5dir/Delphes/cards/FCC/FCChh_PileUp.tcl $mg5dir/Template/Common/Cards/delp
 Assume you have successfully install everything, here the example is generating FCChh diHiggs production as an example. 
 ```
 source setup.sh
+cd $datadir
 python $mg5dir/bin/mg5_aMC $workdir/MG_script/example-MG5-pythia8-delphes.txt 
 
 ```
