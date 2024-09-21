@@ -52,6 +52,7 @@ python $mg5dir/bin/mg5_aMC $workdir/MG_script/example-MG5-pythia8-delphes.txt
 ## Running with cluster using slurm
 Similarly, we use the example MG5 script card:
 ```
+source setup.sh
 sbatch $workdir/submit_job.sh
 ```
 You can check the progress with 
