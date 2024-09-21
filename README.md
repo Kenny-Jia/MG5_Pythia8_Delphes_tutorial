@@ -28,7 +28,7 @@ Open mg5\_aMC
 ```
 python $mg5dir/bin/mg5_aMC
 ```
-Now let's install all kinds of package we need within MG5\_aMC prompt. Be patient, they may take like 10 mins to finish.
+Now let's install all kinds of package we need within MG5\_aMC prompt. Be patient, they may take like 25 mins to finish.
 ```
 install lhapdf6
 install pythia8
@@ -55,5 +55,9 @@ You can check the progress with
 ```
 squeue -u $USER
 ```
-
+## Optional, Debugging, and other issues
+```
+pip install readline
+```
+readline is optional but strongly recommended for interactive MadGraph usage. For any issues regarding this repo, please feel free to contact Kenny through email: hjia625@stanford.edu. I would be happy to help!
 

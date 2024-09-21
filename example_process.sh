@@ -1,5 +1,6 @@
 source /cvmfs/sft.cern.ch/lcg/views/LCG_105/x86_64-centos7-gcc11-opt/setup.sh
 export mg5dir=$workdir/MG5_aMC_v3_5_5
+export datadir=$workdir/data
 export PYTHIA8DATA=`$mg5dir/HEPTools/pythia8/bin/pythia8-config --xmldoc`
 export scriptDir=$workdir/MG_script
 export PATH=$mg5dir/bin:$mg5dir/HEPTools/bin:$PATH
@@ -26,4 +27,5 @@ sed 's/set iseed 0/set iseed '"$MyRandomNumber"'/g' "$temp_file" > "$scriptDir/e
 rm "$temp_file"
 
 # Run the Python script
+cd $datadir
 python $mg5dir/bin/mg5_aMC $scriptDir/example-MG5-pythia8-delphes_$SLURM_ARRAY_TASK_ID.txt
