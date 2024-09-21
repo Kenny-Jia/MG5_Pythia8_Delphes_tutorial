@@ -4,8 +4,10 @@ This tutorial contains a specific guide to
 2) Hadronize using Pythia8
 3) Run fast simulation for FCC-hh (will be compatible for other collider) detector's response using Delphes
 4) Submit jobs with Slurm in SLAC S3DF computing environment to produce large number of events
-##Installation (first time only)
-I highly recommend to done this tutorial and all Monte\_Carlo generation at S3DF iana /fs/ddn/sdf/group/atlas/d/$USER
+
+## Installation (first time only)
+I highly recommend to run this tutorial and all Monte\_Carlo generation at S3DF iana /fs/ddn/sdf/group/atlas/d/$USER for large storage space.
+
 First, clone this repo to hold everything
 ```
 cd /fs/ddn/sdf/group/atlas/d/$USER
