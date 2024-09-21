@@ -10,7 +10,7 @@ First, clone this repo to hold everything
 ```
 cd /fs/ddn/sdf/group/atlas/d/$USER
 git clone https://github.com/Kenny-Jia/MG5_Pythia8_Delphes_tutorial Monte_Carlo
-export $workdir=./MonteCarlo
+export workdir=$PWD/MonteCarlo
 cd $workdir
 ```
 If you are on either S3DF or lxplus, you should have access to cvmfs. We will use ROOT from there.
