@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #
-#SBATCH --job-name=$USER_MC_
+#SBATCH --job-name=$USER_MC
 #SBATCH --output=MC_output-%j.out
 #SBATCH --error=MC_output-%j.err
 #

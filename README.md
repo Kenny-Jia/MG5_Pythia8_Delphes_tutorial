@@ -22,9 +22,9 @@ source /cvmfs/sft.cern.ch/lcg/views/LCG_105/x86_64-centos7-gcc11-opt/setup.sh
 ```
 Download the Madgragh5 package from the official website
 ```
-wget https://launchpad.net/mg5amcnlo/3.0/3.5.x/+download/MG5_aMC_v3.5.5.tar.gz
-tar zxf MG5_aMC_v3.5.5.tar.gz 
-export mg5dir=$PWD/MG5_aMC_v3_5_5/
+wget https://launchpad.net/mg5amcnlo/3.0/3.5.x/+download/MG5_aMC_v3.5.6.tar.gz
+tar zxf MG5_aMC_v3.5.6.tar.gz 
+export mg5dir=$PWD/MG5_aMC_v3_5_6/
 ```
 Open mg5\_aMC
 ```

@@ -1,7 +1,7 @@
 source /cvmfs/sft.cern.ch/lcg/views/LCG_105/x86_64-centos7-gcc11-opt/setup.sh
 export workdir=/fs/ddn/sdf/group/atlas/d/$USER/Monte_Carlo
 export datadir=$workdir/data
-export mg5dir=$workdir/MG5_aMC_v3_5_5
+export mg5dir=$workdir/MG5_aMC_v3_5_6
 export PYTHIA8DATA=`$mg5dir/HEPTools/pythia8/bin/pythia8-config --xmldoc` 
 if [ -d "$ROOTSYS"  ]; then
     echo "Using ROOT from $ROOTSYS";
