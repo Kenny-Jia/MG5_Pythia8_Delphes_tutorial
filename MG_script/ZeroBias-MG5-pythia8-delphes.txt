@@ -1,0 +1,35 @@
+set run_mode 0 
+import model sm 
+define l- = e- mu-
+define l+ = e+ mu+
+define vl = ve vm
+define vl~ = ve~ vm~
+generate p p > j j
+add process p p > j j j
+add process p p > j j j j
+add process p p > z > l+ l-
+add process p p > t t~
+
+add process p p > w- > l- vl~
+add process p p > w- j, (w- > l- vl~) 
+add process p p > w- j j, (w- > l- vl~) 
+
+add process p p > w+ > l+ vl
+add process p p > w+ j, (w+ > l+ vl) 
+add process p p > w+ j j, (w+ > l+ vl) 
+output ZeroBias-MG5-pythia8-delphes
+launch
+shower=Pythia8
+detector=Delphes
+set mh 125.0
+set wh 0.004
+set ebeam1 50000.
+set ebeam2 50000.
+set nevents 1000
+set iseed 0
+set ptj 5 
+set ptb 10
+set etaj 5 
+set etab 3
+set Main:numberOfEvents 1000
+0
