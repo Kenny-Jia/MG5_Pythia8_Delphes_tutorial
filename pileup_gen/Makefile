@@ -18,7 +18,7 @@
 SHELL=/usr/bin/env bash
 
 # Include the configuration.
--include Makefile.inc
+-include $(PYTHIA_BASE_DIR)/share/Pythia8/examples/Makefile.inc
 
 # hardcode pythia include path
 PREFIX_LIB=$(PYTHIA_BASE_DIR)/lib
