@@ -1,21 +1,21 @@
 # PYTHIA configuration file.
 # Generated on Fri Oct 4 14:34:06 PDT 2024 with the user supplied options:
-# --prefix=/fs/ddn/sdf/group/atlas/d/lizhx/Monte_Carlo/MG5_aMC_v3_5_6/HEPTools/pythia8/
-# --with-hepmc2=/fs/ddn/sdf/group/atlas/d/lizhx/Monte_Carlo/MG5_aMC_v3_5_6/HEPTools/hepmc
-# --with-hepmc2-include=/fs/ddn/sdf/group/atlas/d/lizhx/Monte_Carlo/MG5_aMC_v3_5_6/HEPTools/hepmc/include
-# --with-gzip=/fs/ddn/sdf/group/atlas/d/lizhx/Monte_Carlo/MG5_aMC_v3_5_6/HEPTools/zlib
-# --with-lhapdf6=/fs/ddn/sdf/group/atlas/d/lizhx/Monte_Carlo/MG5_aMC_v3_5_6/HEPTools/lhapdf6_py3
+# --prefix=/fs/ddn/sdf/group/atlas/d/lizhx/MG5_aMC_v3_5_6/HEPTools/pythia8/
+# --with-hepmc2=/fs/ddn/sdf/group/atlas/d/lizhx/MG5_aMC_v3_5_6/HEPTools/hepmc
+# --with-hepmc2-include=/fs/ddn/sdf/group/atlas/d/lizhx/MG5_aMC_v3_5_6/HEPTools/hepmc/include
+# --with-gzip=/fs/ddn/sdf/group/atlas/d/lizhx/MG5_aMC_v3_5_6/HEPTools/zlib
+# --with-lhapdf6=/fs/ddn/sdf/group/atlas/d/lizhx/MG5_aMC_v3_5_6/HEPTools/lhapdf6_py3
 # --cxx-common='-ldl -fPIC -lstdc++ -std=c++11 -O2 -pthread -DHEPMC2HACK'
 
 # Install directory prefixes.
-PREFIX_BIN=/fs/ddn/sdf/group/atlas/d/lizhx/Monte_Carlo/MG5_aMC_v3_5_6/HEPTools/pythia8//bin
-PREFIX_INCLUDE=/fs/ddn/sdf/group/atlas/d/lizhx/Monte_Carlo/MG5_aMC_v3_5_6/HEPTools/pythia8//include
-PREFIX_LIB=/fs/ddn/sdf/group/atlas/d/lizhx/Monte_Carlo/MG5_aMC_v3_5_6/HEPTools/pythia8//lib
-PREFIX_SHARE=/fs/ddn/sdf/group/atlas/d/lizhx/Monte_Carlo/MG5_aMC_v3_5_6/HEPTools/pythia8//share/Pythia8
+PREFIX_BIN=/fs/ddn/sdf/group/atlas/d/lizhx/MG5_aMC_v3_5_6/HEPTools/pythia8//bin
+PREFIX_INCLUDE=/fs/ddn/sdf/group/atlas/d/lizhx/MG5_aMC_v3_5_6/HEPTools/pythia8//include
+PREFIX_LIB=/fs/ddn/sdf/group/atlas/d/lizhx/MG5_aMC_v3_5_6/HEPTools/pythia8//lib
+PREFIX_SHARE=/fs/ddn/sdf/group/atlas/d/lizhx/MG5_aMC_v3_5_6/HEPTools/pythia8//share/Pythia8
 
 # Compilation flags (see ./configure --help for further documentation).
 CXX=g++
-CXX_COMMON=-ldl -fPIC -lstdc++ -std=c++11 -O2 -pthread -DHEPMC2HACK -DGZIP -I/fs/ddn/sdf/group/atlas/d/lizhx/Monte_Carlo/MG5_aMC_v3_5_6/HEPTools/zlib/include
+CXX_COMMON=-ldl -fPIC -lstdc++ -std=c++11 -O2 -pthread -DHEPMC2HACK -DGZIP -I/fs/ddn/sdf/group/atlas/d/lizhx/MG5_aMC_v3_5_6/HEPTools/zlib/include
 CXX_SHARED=-shared
 CXX_SONAME=-Wl,-soname,
 LIB_SUFFIX=.so
@@ -35,9 +35,9 @@ FASTJET3_LIB=
 
 HEPMC2_USE=true
 HEPMC2_CONFIG=
-HEPMC2_BIN=/fs/ddn/sdf/group/atlas/d/lizhx/Monte_Carlo/MG5_aMC_v3_5_6/HEPTools/hepmc/
-HEPMC2_INCLUDE=-I/fs/ddn/sdf/group/atlas/d/lizhx/Monte_Carlo/MG5_aMC_v3_5_6/HEPTools/hepmc/include
-HEPMC2_LIB=-L/fs/ddn/sdf/group/atlas/d/lizhx/Monte_Carlo/MG5_aMC_v3_5_6/HEPTools/hepmc/lib -Wl,-rpath,/fs/ddn/sdf/group/atlas/d/lizhx/Monte_Carlo/MG5_aMC_v3_5_6/HEPTools/hepmc/lib -lHepMC
+HEPMC2_BIN=/fs/ddn/sdf/group/atlas/d/lizhx/MG5_aMC_v3_5_6/HEPTools/hepmc/
+HEPMC2_INCLUDE=-I/fs/ddn/sdf/group/atlas/d/lizhx/MG5_aMC_v3_5_6/HEPTools/hepmc/include
+HEPMC2_LIB=-L/fs/ddn/sdf/group/atlas/d/lizhx/MG5_aMC_v3_5_6/HEPTools/hepmc/lib -Wl,-rpath,/fs/ddn/sdf/group/atlas/d/lizhx/MG5_aMC_v3_5_6/HEPTools/hepmc/lib -lHepMC
 
 HEPMC3_USE=false
 HEPMC3_CONFIG=
@@ -53,9 +53,9 @@ LHAPDF5_LIB=
 
 LHAPDF6_USE=true
 LHAPDF6_CONFIG=lhapdf-config
-LHAPDF6_BIN=/fs/ddn/sdf/group/atlas/d/lizhx/Monte_Carlo/MG5_aMC_v3_5_6/HEPTools/lhapdf6_py3/bin/
-LHAPDF6_INCLUDE=-I/fs/ddn/sdf/group/atlas/d/lizhx/Monte_Carlo/MG5_aMC_v3_5_6/HEPTools/lhapdf6_py3/include
-LHAPDF6_LIB=-L/fs/ddn/sdf/group/atlas/d/lizhx/Monte_Carlo/MG5_aMC_v3_5_6/HEPTools/lhapdf6_py3/lib -Wl,-rpath,/fs/ddn/sdf/group/atlas/d/lizhx/Monte_Carlo/MG5_aMC_v3_5_6/HEPTools/lhapdf6_py3/lib -lLHAPDF
+LHAPDF6_BIN=/fs/ddn/sdf/group/atlas/d/lizhx/MG5_aMC_v3_5_6/HEPTools/lhapdf6_py3/bin/
+LHAPDF6_INCLUDE=-I/fs/ddn/sdf/group/atlas/d/lizhx/MG5_aMC_v3_5_6/HEPTools/lhapdf6_py3/include
+LHAPDF6_LIB=-L/fs/ddn/sdf/group/atlas/d/lizhx/MG5_aMC_v3_5_6/HEPTools/lhapdf6_py3/lib -Wl,-rpath,/fs/ddn/sdf/group/atlas/d/lizhx/MG5_aMC_v3_5_6/HEPTools/lhapdf6_py3/lib -lLHAPDF
 
 POWHEG_USE=false
 POWHEG_CONFIG=
@@ -77,9 +77,9 @@ ROOT_LIB=
 
 GZIP_USE=true
 GZIP_CONFIG=
-GZIP_BIN=/fs/ddn/sdf/group/atlas/d/lizhx/Monte_Carlo/MG5_aMC_v3_5_6/HEPTools/zlib/
-GZIP_INCLUDE=-I/fs/ddn/sdf/group/atlas/d/lizhx/Monte_Carlo/MG5_aMC_v3_5_6/HEPTools/zlib/include
-GZIP_LIB=-L/fs/ddn/sdf/group/atlas/d/lizhx/Monte_Carlo/MG5_aMC_v3_5_6/HEPTools/zlib/lib -Wl,-rpath,/fs/ddn/sdf/group/atlas/d/lizhx/Monte_Carlo/MG5_aMC_v3_5_6/HEPTools/zlib/lib -lz
+GZIP_BIN=/fs/ddn/sdf/group/atlas/d/lizhx/MG5_aMC_v3_5_6/HEPTools/zlib/
+GZIP_INCLUDE=-I/fs/ddn/sdf/group/atlas/d/lizhx/MG5_aMC_v3_5_6/HEPTools/zlib/include
+GZIP_LIB=-L/fs/ddn/sdf/group/atlas/d/lizhx/MG5_aMC_v3_5_6/HEPTools/zlib/lib -Wl,-rpath,/fs/ddn/sdf/group/atlas/d/lizhx/MG5_aMC_v3_5_6/HEPTools/zlib/lib -lz
 
 PYTHON_USE=false
 PYTHON_CONFIG=

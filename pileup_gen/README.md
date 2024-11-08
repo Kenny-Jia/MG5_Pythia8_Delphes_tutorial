@@ -7,6 +7,7 @@ source setup.sh
 Now run the pileup generation script in this directory
 ```
 cd pileup_gen
+mkdir output
 ./run_pileup_gen.sh
 ```
 The shell script will do three things
