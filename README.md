@@ -12,7 +12,7 @@ First, clone this repo to hold everything
 ```
 cd /fs/ddn/sdf/group/atlas/d/$USER
 git clone https://github.com/Kenny-Jia/MG5_Pythia8_Delphes_tutorial Monte_Carlo
-export workdir=$PWD/Monte_Carlo
+export workdir=$PWD
 cd $workdir
 ```
 If you are on either S3DF or lxplus, you should have access to cvmfs. We will use ROOT from there.
@@ -52,8 +52,9 @@ python $mg5dir/bin/mg5_aMC $workdir/MG_script/example-MG5-pythia8-delphes.txt
 ## Running with cluster using slurm
 Similarly, we use the example MG5 script card:
 ```
+cd $workdir/Monte_Carlo
 source setup.sh
-sbatch $workdir/submit_job.sh
+sbatch $workdir/Monte_Carlo/submit_job.sh
 ```
 You can check the progress with 
 ```

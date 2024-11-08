@@ -10,7 +10,7 @@ if [ -z "$mg5dir" ]; then
   exit 1
 fi
 
-export PILEUP_DIR=$workdir/pileup_gen
+export PILEUP_DIR=$workdir/Monte_Carlo/pileup_gen
 export PYTHIA_BASE_DIR="$mg5dir/HEPTools/pythia8"
 # export EXAMPLES_DIR="$mg5dir/HEPTools/pythia8/share/Pythia8/examples"
 echo "Using PYTHIA_BASE_DIR=$PYTHIA_BASE_DIR";

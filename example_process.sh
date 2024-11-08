@@ -1,8 +1,8 @@
 source /cvmfs/sft.cern.ch/lcg/views/LCG_105/x86_64-centos7-gcc11-opt/setup.sh
-export mg5dir=$workdir/MG5_aMC_v3_56_
-export datadir=$workdir/data
+export mg5dir=$workdir/MG5_aMC_v3_5_6
+export datadir=$workdir/Monte_Carlo/data
 export PYTHIA8DATA=`$mg5dir/HEPTools/pythia8/bin/pythia8-config --xmldoc`
-export scriptDir=$workdir/MG_script
+export scriptDir=$workdir/Monte_Carlo/MG_script
 export PATH=$mg5dir/bin:$mg5dir/HEPTools/bin:$PATH
 export LD_LIBRARY_PATH=$mg5dir/HEPTools/lib/:$mg5dir/HEPTools/lhapdf6_py3/lib/:$mg5dir/HEPTools/lhapdf6_py3/lib/python3.9/site-packages/:$mg5dir/HEPTools/hepmc/lib/:$mg5dir/HEPTools/pythia8//lib:$mg5dir/HEPTools/zlib/lib/:$LD_LIBRARY_PATH:/sdf/data/atlas/u/hjia625/LD_lib:$ROOTSYS/lib:$LD_LIBRARY_PATH
 

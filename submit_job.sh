@@ -13,5 +13,5 @@
 #
 #SBATCH --gpus 0 
 
-source $workdir/example_process.sh 
+source $workdir/Monte_Carlo/example_process.sh 
 echo "This is task number $SLURM_ARRAY_TASK_ID"
