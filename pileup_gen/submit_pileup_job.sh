@@ -6,7 +6,7 @@
 #SBATCH --error=Pileup_output-%j.err
 #
 #SBATCH --account=atlas:usatlas
-#SBATCH --partition=ampere
+#SBATCH --partition=roma
 #SBATCH --cpus-per-task=32
 #SBATCH --mem-per-cpu=5g
 #
