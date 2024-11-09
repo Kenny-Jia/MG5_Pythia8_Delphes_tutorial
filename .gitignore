@@ -1,3 +1,5 @@
 logs/
 data/
 pileup_gen/output/
+*.err
+*.out
