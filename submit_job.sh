@@ -1,10 +1,12 @@
 #!/bin/bash
 
 #
-#SBATCH --job-name=$USER_MC
+#SBATCH --job-name=MG_PY_Delphes_MC
 #SBATCH --output=MC_output-%j.out
 #SBATCH --error=MC_output-%j.err
 #
+#SBATCH --account=atlas:usatlas
+#SBATCH --partition=milano
 #SBATCH --array=1-2
 #SBATCH --cpus-per-task=16
 #SBATCH --mem-per-cpu=5g
