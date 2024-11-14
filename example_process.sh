@@ -14,7 +14,7 @@ echo "Using PATH=$PATH"
 echo "Using LD_LIBRARY_PATH=$LD_LIBRARY_PATH"
 echo "Using PYTHIA8DATA=$PYTHIA8DATA"
 echo "Using LHAPDF_DATA_PATH=$LHAPDF_DATA_PATH"
-if [ "$MyRandomNumber" == ""  ]; then export MyRandomNumber=`date +"%-N"`; fi
+if [ "$MyRandomNumber" == ""  ]; then export MyRandomNumber=$(($(date +"%-N") % 904864561)); fi
 temp_file=$(mktemp)
 
 # Perform the first sed operation

@@ -6,7 +6,7 @@
 #SBATCH --error=MC_output-%j.err
 #
 #SBATCH --account=atlas:usatlas
-#SBATCH --partition=milano
+#SBATCH --partition=roma
 #SBATCH --array=1-2
 #SBATCH --cpus-per-task=16
 #SBATCH --mem-per-cpu=5g
