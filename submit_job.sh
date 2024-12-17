@@ -1,9 +1,12 @@
 #!/bin/bash
 
+#SBATCH --account=atlas:default
+#SBATCH --partition=roma
+#SBATCH --qos=preemptable
 #
-#SBATCH --job-name=$USER_MC
-#SBATCH --output=MC_output-%j.out
-#SBATCH --error=MC_output-%j.err
+#SBATCH --job-name=lizhx_MC_
+#SBATCH --output=logs/MC_output-%j.out
+#SBATCH --error=logs/MC_output-%j.err
 #
 #SBATCH --array=1-2
 #SBATCH --cpus-per-task=16

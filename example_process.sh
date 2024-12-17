@@ -1,4 +1,5 @@
 source /cvmfs/sft.cern.ch/lcg/views/LCG_105/x86_64-centos7-gcc11-opt/setup.sh
+export processName="cms-pu200-zz4l"
 export mg5dir=$workdir/MG5_aMC_v3_5_6
 export datadir=$workdir/Monte_Carlo/data
 export PYTHIA8DATA=`$mg5dir/HEPTools/pythia8/bin/pythia8-config --xmldoc`
@@ -14,18 +15,21 @@ echo "Using PATH=$PATH"
 echo "Using LD_LIBRARY_PATH=$LD_LIBRARY_PATH"
 echo "Using PYTHIA8DATA=$PYTHIA8DATA"
 echo "Using LHAPDF_DATA_PATH=$LHAPDF_DATA_PATH"
-if [ "$MyRandomNumber" == ""  ]; then export MyRandomNumber=`date +"%-N"`; fi
+# if [ "$MyRandomNumber" == ""  ]; then export MyRandomNumber=`date +"%-N"`; fi
+if [ -z "$MyRandomNumber" ]; then
+    export MyRandomNumber=$(shuf -i 1-900000000 -n 1)
+fi
 temp_file=$(mktemp)
 
 # Perform the first sed operation
-sed 's/output /output '"$SLURM_ARRAY_TASK_ID"'/g' "$scriptDir/example-MG5-pythia8-delphes.txt" > "$temp_file"
+sed 's/output /output '"$SLURM_ARRAY_TASK_ID"'/g' "${scriptDir}/${processName}.txt" > "$temp_file"
 
 # Perform the second sed operation, writing to the final output file
-sed 's/set iseed 0/set iseed '"$MyRandomNumber"'/g' "$temp_file" > "$scriptDir/example-MG5-pythia8-delphes_$SLURM_ARRAY_TASK_ID.txt"
+sed 's/set iseed 0/set iseed '"$MyRandomNumber"'/g' "$temp_file" > "${scriptDir}/${processName}_${SLURM_ARRAY_TASK_ID}.txt"
 
 # Remove the temporary file
 rm "$temp_file"
 
 # Run the Python script
 cd $datadir
-python $mg5dir/bin/mg5_aMC $scriptDir/example-MG5-pythia8-delphes_$SLURM_ARRAY_TASK_ID.txt
+python $mg5dir/bin/mg5_aMC "${scriptDir}/${processName}_${SLURM_ARRAY_TASK_ID}.txt"

@@ -8,6 +8,7 @@ if [ -d "$ROOTSYS"  ]; then
 else
     echo "ROOT not found!";
 fi
+export ROOT_INCLUDE_PATH=$ROOT_INCLUDE_PATH:$mg5dir/Delphes/external
 if [ -d "$mg5dir"  ]; then 
     echo "Using Madgraph5 from $mg5dir";
 else
