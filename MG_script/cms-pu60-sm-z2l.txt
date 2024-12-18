@@ -1,0 +1,26 @@
+set run_mode 0 
+import model sm 
+define l- = e- mu-
+define l+ = e+ mu+
+define vl = ve vm
+define vl~ = ve~ vm~
+generate p p > z > l+ l-
+
+output cms-pu60-sm-z2l-cut
+launch
+shower=Pythia8
+detector=Delphes
+set mh 125.0
+set wh 0.004
+set ebeam1 6500.
+set ebeam2 6500.
+set nevents 50000
+set iseed 0
+set ptj 5 
+set ptb 10
+set etaj 5 
+set etab 3
+set xptl 22
+
+set Main:numberOfEvents 50000
+0

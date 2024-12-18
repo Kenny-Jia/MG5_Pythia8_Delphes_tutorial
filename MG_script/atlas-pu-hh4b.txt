@@ -1,7 +1,7 @@
 set run_mode 0 
 import model heft
-generate p p > h h
-output example-MG5-pythia8-delphes
+generate p p > h h,  (h > b b~), (h > b b~)
+output atlas-pu-hh4b
 launch
 shower=Pythia8
 detector=Delphes
@@ -9,11 +9,13 @@ set mh 125.0
 set wh 0.004
 set ebeam1 50000.
 set ebeam2 50000.
-set nevents 1000
+set nevents 10000
 set iseed 0
-set ptj 20
-set ptb 20
+set ptj 10
+set ptb 10
 set etaj 5
 set etab 3
-set Main:numberOfEvents 1000
+set Main:numberOfEvents 10000
 0
+
+

@@ -1,0 +1,27 @@
+set run_mode 0 
+import model sm 
+define l- = e- mu-
+define l+ = e+ mu+
+define vl = ve vm
+define vl~ = ve~ vm~
+generate p p > j j
+add process p p > j j j
+add process p p > j j j j
+
+output cms-pu200-sm-multijet-cut
+launch
+shower=Pythia8
+detector=Delphes
+set mh 125.0
+set wh 0.004
+set ebeam1 7000.
+set ebeam2 7000.
+set nevents 100000
+set iseed 0
+set ptj 5 
+set ptb 10
+set etaj 5 
+set etab 3
+set xptl 22
+set Main:numberOfEvents 10000
+0
