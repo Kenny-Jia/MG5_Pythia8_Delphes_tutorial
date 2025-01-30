@@ -1,0 +1,19 @@
+set run_mode 0 
+import model heft
+generate p p > h h
+output 1example-MG5-pythia8-delphes
+launch
+shower=Pythia8
+detector=Delphes
+set mh 125.0
+set wh 0.004
+set ebeam1 50000.
+set ebeam2 50000.
+set nevents 1000
+set iseed 959189260
+set ptj 20
+set ptb 20
+set etaj 5
+set etab 3
+set Main:numberOfEvents 1000
+0

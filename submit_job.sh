@@ -4,10 +4,12 @@
 #SBATCH --partition=roma
 #SBATCH --qos=preemptable
 #
-#SBATCH --job-name=lizhx_MC_
+#SBATCH --job-name=MG_PY_Delphes_MC
 #SBATCH --output=logs/MC_output-%j.out
 #SBATCH --error=logs/MC_output-%j.err
 #
+#SBATCH --account=atlas:usatlas
+#SBATCH --partition=roma
 #SBATCH --array=1-2
 #SBATCH --cpus-per-task=16
 #SBATCH --mem-per-cpu=5g
